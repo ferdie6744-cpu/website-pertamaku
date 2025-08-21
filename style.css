@@ -1,0 +1,164 @@
+/* ====== Global Style ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* biru terang */
+    color: #fff;
+}  ne-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ====== Header ====== */
+/* === STYLE UNTUK BODY === */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f2f2;
+}
+
+/* === HEADER === */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* gradient biru */
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 20px; /* biar pas di tengah */
+}
+
+/* === NAMA DAN DESKRIPSI === */
+header h1 {
+  font-size: clamp(20px, 5vw, 36px); /* auto kecil di HP, besar di laptop */
+  margin: 10px 0 5px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+  color: #00d9ff;
+}
+
+header p {
+  font-size: clamp(14px, 3vw, 18px);
+  color: #bdefff;
+  margin: 0;
+}
+section {
+  max-width: 850px;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.08);
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  animation: fadeUp 1.5s ease;
+}
+h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+  border-left: 5px solid #00d9ff;
+  padding-left: 10px;
+  color: #00d9ff;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  transition: transform 0.2s;
+}
+ul li:hover {
+  transform: translateX(5px);
+  color: #ffd166;
+}
+
+/* ====== Link Style ====== */
+a {
+  color: #ffd166;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+a:hover {
+  color: #fff;
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.5);
+  margin-top: 50px;
+  font-size: 0.9em;
+  color: #bdefff;
+}
+
+/* ====== Animation Keyframes ====== */
+@keyframes fadeDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.biodata-item {
+  display: grid;
+  grid-template-columns: 140px auto 1fr; /* label | titik dua | isi */
+  margin: 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.3); /* garis putih tipis */
+}
+
+.biodata-item .label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.biodata-item .separator {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  padding: 0 5px; /* biar gak nempel */
+}
+
+.biodata-item .value {
+  color: #f1f1f1;
+}
+  display: grid;
+  grid-template-columns: 200px 20px 1fr; /* label | titik dua | isi */
+  margin: 10px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255,255,255,0.3); /* garis putih tipis */
+}
+
+.biodata-item .label {
+  font-weight: bold;
+  color: #fff;
+}
+
+.biodata-item .separator {
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.biodata-item .value {
+  color: #f1f1f1;
+}
